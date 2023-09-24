@@ -1,0 +1,83 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.carros {
+    display: flex;
+    margin-top: 20px;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.imagem {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+} /* serve para redimencionar foto/video*/
+
+.carousel-home {
+    height: 80vh;
+    position: relative;
+}
+
+.carousel-home .carousel-inner {
+    height: 100%;
+}
+
+.carousel-home .carousel-item {
+    height: 100%;
+}
+
+.card-img-top {
+    height: 190px;
+}
+
+.card-text {
+    height: calc(100% - 1.25rem - 64px);
+}
+
+.lateral {
+    width: 200px;
+    height: 100vh;
+    background-color: rgb(216, 216, 216);
+    min-width: 200px;
+    position: sticky;
+    top: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.flex-box {
+    background-color:#f8f9fa;
+} 
+
+.abaixar {
+   position: absolute;
+   bottom: 10px;
+   width: 100%;
+}
+
+.logo {
+    width: 80%;
+    margin: 0 auto;
+    height: 100px;
+    object-fit: cover;
+}
+
+.rodape {
+    margin-top: 22px;
+    background-color: #fff;
+    padding: 12px;
+}
+
+.enviar {
+    float: right;
+}

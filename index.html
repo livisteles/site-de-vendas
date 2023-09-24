@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
+  <title>LCarros</title>
+</head>
+
+<body>
+  <!--nav bar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light d-lg-none">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">LCarros</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Carros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Consórcio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Sobre nós
+            </a>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contatos</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Procurar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="flex-box">
+    <div class="container">
+      <!--menu lateral-->
+      <div class="lateral d-flex flex-column flex-shrink-0 p-3 bg-light d-none d-lg-block" style="width: 280px;">
+        <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
+          target="_blank">
+          <img src="img/logo.png" alt="LCarros" class="logo">
+        </a>
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link active" aria-current="page">
+              <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#home"></use>
+              </svg>
+              Carros
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link link-dark">
+              <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#speedometer2"></use>
+              </svg>
+              Consórcio
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link link-dark">
+              <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#table"></use>
+              </svg>
+              Sobre nós
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link link-dark">
+              <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#grid"></use>
+              </svg>
+              Contatos
+            </a>
+          </li>
+        </ul>
+        <!--barra de navegação-->
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Procurar</button>
+        </form>
+        
+      </div>
+      <div class="d-flex">
+        <div>
+          <!--carrossel-->
+          <div id="carousel-home" class="carousel slide carousel-home" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carousel-home" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carousel-home" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carousel-home" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/sw4.jpg" class="d-block imagem" alt="Toyota SW4">
+              </div>
+              <div class="carousel-item">
+                <img src="img/creta.jpg" class="d-block imagem" alt="Hyundai Creta">
+              </div>
+              <div class="carousel-item">
+                <img src="img/compass.jpg" class="d-block imagem" alt="Jeep Compass">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-home" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-home" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!--card dos carros-->
+          <div class="carros">
+            <div class="card" style="width: 18rem;">
+              <img src="img/sw4.jpg" class="card-img-top" alt="sw4">
+              <div class="card-body">
+                <h5 class="card-title">Toyota sw4</h5>
+                <p class="card-text">Toyota SW4 SRX 2.8 Diesel AT 4x4 2023 (5 lugares) – R$ 378.190.</p>
+                <a href="#" class="btn btn-primary">Ver mais</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="img/creta.jpg" class="card-img-top" alt="Hyundai Creta">
+              <div class="card-body">
+                <h5 class="card-title">Hyundai Creta</h5>
+                <p class="card-text">SUV compacto tem novos itens de design e segurança R$ 135.990</p>
+                <a href="#" class="btn btn-primary">Ver mais</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="img/compass.jpg" class="card-img-top" alt="Jeep Compass">
+              <div class="card-body">
+                <h5 class="card-title">Jeep Compass</h5>
+                <p class="card-text">Compass Limited T270: R$ 209.490.</p>
+                <a href="#" class="btn btn-primary">Ver mais</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="img/t-cross.jpg" class="card-img-top" alt="Volkswagen T-Cross">
+              <div class="card-body">
+                <h5 class="card-title">Volkswagen T-Cross</h5>
+                <p class="card-text">O Volkswagen T-Cross é um modelo de carro que pertence à categoria de Carros e
+                  Caminhonetes: R$ 118.990</p>
+                <a href="#" class="btn btn-primary">Ver mais</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="img/hrv.webp" class="card-img-top" alt="Honda HR-V">
+              <div class="card-body">
+                <h5 class="card-title">Honda HR-V</h5>
+                <p class="card-text">Versões do New HR-V. A partir de R$ 194.800,00</p>
+                <a href="#" class="btn btn-primary">Ver mais</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="img/tiggo.jpg" class="card-img-top" alt="Caoa Chery Tiggo 8">
+              <div class="card-body">
+                <h5 class="card-title">Caoa Chery Tiggo 8</h5>
+                <p class="card-text">Tiggo 8 Turbo GDI Max Drive 2024, R$ 199.990,00</p>
+                <a href="#" class="btn btn-primary">Ver mais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--rodapé-->
+    <footer class="rodape container d-block">
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Seu E-mail</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@gmail.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Entre em contato</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <button class="btn btn-primary enviar">Enviar</button>
+    </footer>
+</body>
+
+</html>
